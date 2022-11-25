@@ -28,3 +28,12 @@ else
             count=count - 2;
         }
     }
+
+    //вариант преподавателя:
+
+    // int i = 2;
+    // while (i < num)
+    //{
+//      Console.Write(i);
+//      i+=2;
+    //}
