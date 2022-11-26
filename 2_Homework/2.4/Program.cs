@@ -11,10 +11,14 @@ string WeekDay(int num)
         return "Ошибка";
 
 }
+
+
+
+
+Console.WriteLine("Введите цифру от 1 до 7, обозначающую день недели, где 1 - это понедельник, а 7 - это воскресенье: ");
+Console.WriteLine(WeekDay(int.Parse(Console.ReadLine())));
+
+
+//альтернатива:
 //int num = int.Parse(Console.ReadLine());
 //Console.WriteLine(WeekDay(num));
-
-
-
-Console.WriteLine("Введите число от 1 до 7: ");
-Console.WriteLine(WeekDay(int.Parse(Console.ReadLine())));

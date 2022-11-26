@@ -5,21 +5,13 @@ void Method(int num)
 {
     if (num > 100)
     {
-        if (num < 1000)
-            Console.WriteLine($"Третья цифра {num%10}");
-        else
-        {
-            while (num > 999)
-            {
-                num = num/10;
-            }
-            Console.WriteLine($"Третья цифра {num%10}");
-        }
+        while (num > 999)
+            num = num/10;
+        Console.WriteLine($"Третья цифра {num%10}");
     }
     else 
     {
         Console.WriteLine("Третьей цифры нет");
-        
     }
 }
 

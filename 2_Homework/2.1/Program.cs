@@ -16,10 +16,10 @@ string SecNum(int num)
     }
 }
 
-// Для случайного трехзначного числа
-// Console.WriteLine(SecNum(new Random().Next(100,1000)));
-
 
 Console.WriteLine("Введите трехзначное число: ");
-int number = int.Parse(Console.ReadLine());
-Console.WriteLine(SecNum(number));
+
+// int number = int.Parse(Console.ReadLine());
+// Console.WriteLine(SecNum(number));
+
+Console.WriteLine(SecNum(int.Parse(Console.ReadLine())));
