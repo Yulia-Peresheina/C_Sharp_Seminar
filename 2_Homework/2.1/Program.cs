@@ -1,10 +1,25 @@
 ﻿//Напишите программу, которая принимает на вход трёхзначное число
 //и на выходе показывает вторую цифру этого числа.
 
-int SecNum(int num)
+string SecNum(int num)
 {
-    Console.WriteLine(num);
-    return (num/10)%10;
+    if (num > 99 && num <1000)
+    {
+        
+        return "вторая цифра "+(num/10)%10;
+    }
+    else
+    {
+        return "Ошибка. Введите ТРЕХЗНАЧНОЕ число.";
+        
+    
+    }
 }
 
-Console.WriteLine(SecNum(new Random().Next(100,1000)));
+// Для случайного трехзначного числа
+// Console.WriteLine(SecNum(new Random().Next(100,1000)));
+
+
+Console.WriteLine("Введите трехзначное число: ");
+int number = int.Parse(Console.ReadLine());
+Console.WriteLine(SecNum(number));
