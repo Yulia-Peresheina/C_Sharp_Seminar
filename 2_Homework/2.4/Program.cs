@@ -3,7 +3,7 @@
 
 string WeekDay(int num)
 {
-    if ((num < 8 && num > 0) && (num == 6 || num == 7))
+    if (num == 6 || num == 7)
         return "Этот день выходной";
     else if (num < 8 && num > 0)
         return "Этот день рабочий";
@@ -20,5 +20,13 @@ Console.WriteLine(WeekDay(int.Parse(Console.ReadLine())));
 
 
 //альтернатива:
-//int num = int.Parse(Console.ReadLine());
-//Console.WriteLine(WeekDay(num));
+
+
+
+// string WeekDay(int num)
+// {
+//     string text = "no";
+//     if ( num == 6|| num == 7) text = "yes";
+//     return text;
+// }
+// Console.WriteLine(WeekDay(int.Parse(Console.ReadLine())));
