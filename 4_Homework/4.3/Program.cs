@@ -9,7 +9,6 @@ double[] CreateArray(int count)
     {
         array[i] = new Random().Next(0,100);
     }
-   // array = array.Sort(array);
     return array;
 }
 
