@@ -4,16 +4,16 @@
 
 double[] CreateArray(int count)
 {
-    double[] array = new double [count];
+    double[] array = new double[count];
     for (int i = 0; i < count; i++)
     {
-        array[i] = new Random().Next(0,100);
+        array[i] = new Random().Next(0, 100);
     }
     return array;
 }
 
 
-void PrintArray(double [] array)
+void PrintArray(double[] array)
 {
     int n = array.Length;
     for (int i = 0; i < n; i++)

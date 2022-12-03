@@ -6,10 +6,10 @@ int SunNum(int number)
     number = Math.Abs(number);
     while (number > 0)
     {
-        result = result+number%10;
-        number = number/10;
+        result = result + number % 10;
+        number = number / 10;
     }
-        return result;
+    return result;
 }
 
 
