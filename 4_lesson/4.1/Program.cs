@@ -13,7 +13,7 @@ int CountNum(int num)
     return result;
 }
 
-Console.WriteLine(CountNum(1124565));
+Console.WriteLine(CountNum(1234567891));
 
 // 2 вариант через строку
 
@@ -23,4 +23,4 @@ int CountNum2(int num)
     int result2 = number.Length;
     return result2;
 }
-Console.WriteLine(CountNum2(123456));
+Console.WriteLine(CountNum2(1234567891));
