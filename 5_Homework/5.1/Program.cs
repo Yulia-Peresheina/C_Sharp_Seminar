@@ -6,7 +6,7 @@ int[] CreateArray(int count)
     int[] array = new int[count];
     for (int i = 0; i < count; i++)
     {
-        array[i] = new Random().Next(100, 999);
+        array[i] = new Random().Next(100, 1000);
     }
     return array;
 }
