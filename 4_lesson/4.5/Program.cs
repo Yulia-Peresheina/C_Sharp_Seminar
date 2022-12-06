@@ -81,5 +81,5 @@ double[] Method(int N, double[] array, int K)
 double[] array = (CreateArray(9));
 PrintArray(array);
 Console.WriteLine();
-double[] array2 = Method(9, array, -2);
+double[] array2 = Method(9, array, 9);
 PrintArray(array2);
