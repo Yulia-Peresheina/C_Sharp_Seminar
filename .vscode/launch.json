@@ -1,6 +1,17 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/4_Homework/4.1/bin/Debug/net7.0/4.1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
         
         {
             "name": ".NET Core Launch (console)",
@@ -12,7 +23,7 @@
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "console": "integratedTerminal"
-            
+            "requireExactSource": false
             
         },
 
