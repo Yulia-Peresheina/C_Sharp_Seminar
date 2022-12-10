@@ -17,12 +17,12 @@ string PointIntersection(double b1, double k1, double b2, double k2)
 
 Console.WriteLine("Будет вычислена точка пересечения прямых, заданных уравнением y = k*x + b. ");
 Console.Write("Введите переменную k первой прямой: ");
-double a1 = int.Parse(Console.ReadLine()!);
+double a1 = double.Parse(Console.ReadLine()!);
 Console.Write("Введите переменную b первой прямой: ");
-double n1 = int.Parse(Console.ReadLine()!);
+double n1 = double.Parse(Console.ReadLine()!);
 Console.Write("Введите переменную k второй прямой: ");
-double a2 = int.Parse(Console.ReadLine()!);
+double a2 = double.Parse(Console.ReadLine()!);
 Console.Write("Введите переменную b второй прямой: ");
-double n2 = int.Parse(Console.ReadLine()!);
+double n2 = double.Parse(Console.ReadLine()!);
 
 Console.WriteLine(PointIntersection(a1, n1, a2, n2));
