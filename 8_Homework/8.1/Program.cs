@@ -27,15 +27,13 @@ void SortingMatrix(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
-        for (int j = 0; j < matr.GetLength(1) - 1; j++)
+        for (int j = 0; j < matr.GetLength(1); j++)
         {
-            int max = matr[i, j];
-            for (int k = j + 1; k < matr.GetLength(1); k++)
+            for (int k = 0; k < matr.GetLength(1)- j - 1; k++)
             {
-                if (matr[i, k] > max)
+                if (matr[i, k] < matr[i, k + 1])
                 {
-                    max = matr[i,k];
-                    (matr[i, j], matr[i, k]) = (matr[i, k], matr[i, j]);
+                    (matr[i, k], matr[i, k + 1]) = (matr[i, k + 1], matr[i, k]);
                 }
             }
         }
