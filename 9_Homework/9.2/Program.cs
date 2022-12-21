@@ -3,6 +3,7 @@
 
 int SumNumBetween(int M, int N)
 {
+    if (M <= 0 || N <= 0) return 0;
     if (M > N) return 0;
     return M + SumNumBetween(M + 1, N);
 }
